@@ -1,0 +1,14 @@
+body {
+  background-color: #aaa
+}
+
+#outercontainer {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #fff;
+  max-width: 700px;
+  margin: auto;
+  font-size: 14pt;
+}
