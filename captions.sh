@@ -16,6 +16,7 @@ while [[ $length -ge 1 ]]; do #While we still have things left in the file
   length=`wc -l captions.tmp | cut -f1 -d" "` #how long is the file
   ((iterations++)) #keep an eye on where we are
   echo $iterations #where are we?
-  convert -background transparent -fill black -font KG-All-Of-Me -pointsize 46 -gravity Center -size 1280x caption:"$line" captions/$iterations.png #This is the meat of the script. See Imagemagik docs.
+  convert -background transparent -fill black -font KG-All-Of-Me -pointsize 46 -gravity Center -size 1280x caption:"$line" captions/$iterations.png 
+  #Line above is the meat of the script. See Imagemagik docs. Also replace spaces with - in font name.
 done
 rm captions.tmp #clean this mess up!
