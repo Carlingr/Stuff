@@ -1,0 +1,43 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script>
+  var input = "pvvkrmt svi gvnkvi rM xsvxp".toLowerCase();
+  var temp = [];
+  var output = [];
+//A-Z Cypher
+  var backwards = "zyxwvutsrqponmlkjihgfedcba"
+  for (let j = 0; j<input.length; j++){
+    temp.push(input.charCodeAt(j)-97);
+    output.push(backwards[temp[j]])
+  }
+
+// //Shift Cipher
+//   var code = [15,9,11,17,24,11]
+//   var matrix = [];
+//   for (let i = 0; i<26;  i++){
+//     var temp = [];
+//     output.push(i)
+//     for (let j = 0; j<input.length; j++){
+//       temp.push(input.charCodeAt(j) + i);
+//       if (temp[j] > 122) {
+//         temp[j] -= 26;
+//       }
+//       output.push(String.fromCharCode(temp[j]))
+//     }
+//     matrix.push(output);
+//     console.log(output.toString());
+//     output = [];
+//   }
+//   for (var i = 0; i <= input.length; i++) {
+//     output.push(matrix[code[i%(code.length)]][i])
+//   }
+  console.log(output.toString());
+</script>
+</head>
+<body><p style="font-family:'Lucida Console', monospace">ABCDEFGHIJKLMNOPQRSTUVWXYZ
+  <br>
+01234567890123456789012345678  <br>
+000000000011111111112222222222
+</p></body>
+</html>

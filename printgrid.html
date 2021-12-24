@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<script>
+		var columns = 22
+		var rows = 5
+		var grid = new Array();
+
+		var rowtemp = new Array();
+		for (i = 0; i < columns; i++) {
+			rowtemp[i] = "x";
+		}
+
+		for (i = 0; i < rows; i++) {
+			grid[i] = rowtemp;
+		}
+
+		printgrid()
+
+		function printgrid() {
+			for (i = 0; i < grid.length; i++) {
+				var out = ""
+				for (j = 0; j < grid[i].length; j++) {
+					out += grid[i][j]
+				}
+				console.log(out)
+			}
+		}
+
+		function pixtounits(pixels) {
+			return pixels / 70;
+		}
+	</script>
+</body>
+
+</html>
